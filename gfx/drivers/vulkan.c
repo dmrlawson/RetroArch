@@ -1171,8 +1171,8 @@ static void *vulkan_init(const video_info_t *video,
    unsigned full_x, full_y;
    unsigned win_width;
    unsigned win_height;
-   unsigned mode_width                = 0;
-   unsigned mode_height               = 0;
+   unsigned mode_width                = 1280;
+   unsigned mode_height               = 720;
    int interval                       = 0;
    unsigned temp_width                = 0;
    unsigned temp_height               = 0;
