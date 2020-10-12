@@ -1195,7 +1195,7 @@ static void *vulkan_init(const video_info_t *video,
    
    RARCH_LOG("[Vulkan]: Found vulkan context: %s\n", ctx_driver->ident);
 
-   if (vk->ctx_driver->get_video_size)
+   if (!vk->ctx_driver->get_video_size)
       vk->ctx_driver->get_video_size(vk->ctx_data,
             &mode_width, &mode_height);
 
